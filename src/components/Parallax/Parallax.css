@@ -1,0 +1,114 @@
+.parallax {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+}
+
+/* Breakpoints */
+@media (min-width: 380px) {
+    .parallax {
+        /* height: 70vh; */
+        height: 100vh;
+        transform: translateY(-70px);
+    }
+    .parallax__layer--bg .parallax__image {
+        /* object-position: center top; */
+        /* transform: translateY(-20px); /* tweak this value as needed */ */
+    }
+}
+
+@media (min-width: 750px) {
+    .parallax {
+        /* height: 80vh; */
+        /* height: 100vh; */
+        width: 100vw;
+    }
+
+    .parallax__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .parallax {
+        height: 100vh;
+    }
+
+    .parallax__title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1530px) {
+    .parallax__title {
+        font-size: 4rem;
+    }
+}
+
+/* Layer base styles */
+.parallax__layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Z-stacking */
+.parallax__layer--bg {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+}
+.parallax__layer--mg {
+    z-index: 2;
+}
+.parallax__layer--fg {
+    z-index: 3;
+}
+
+/* Image inside each layer */
+.parallax__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay content */
+.parallax__overlay {
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.parallax__button {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.parallax__button:hover {
+    background-color: #ddd;
+}
