@@ -7,9 +7,9 @@ import { ThemeToggle } from "@components/ThemeToggle/ThemeToggle";
 import githubIconDotted from "@assets/icons/github-dotted.png";
 import instagramIconDotted from "@assets/icons/instagram-dotted.png";
 import linkedinIconDotted from "@assets/icons/linkedin-dotted.png";
-import githubIconArcade from "@assets/icons/github-arcade.png";
-import instagramIconArcade from "@assets/icons/instagram-arcade.png";
-import linkedinIconArcade from "@assets/icons/linkedin-arcade.png";
+import githubIconSticker from "@assets/icons/github-sticker.png";
+import instagramIconSticker from "@assets/icons/instagram-sticker.png";
+import linkedinIconSticker from "@assets/icons/linkedin-sticker.png";
 
 export const Layout = () => {
   const { theme } = useTheme();
@@ -30,7 +30,7 @@ export const Layout = () => {
               rel="noreferrer"
             >
               <img
-                src={theme == "dark" ? githubIconDotted : githubIconArcade}
+                src={theme == "dark" ? githubIconDotted : githubIconSticker}
                 alt=""
               />
             </a>
@@ -41,7 +41,7 @@ export const Layout = () => {
             >
               <img
                 src={
-                  theme == "dark" ? instagramIconDotted : instagramIconArcade
+                  theme == "dark" ? instagramIconDotted : instagramIconSticker
                 }
                 alt=""
               />
@@ -52,7 +52,7 @@ export const Layout = () => {
               rel="noreferrer"
             >
               <img
-                src={theme == "dark" ? linkedinIconDotted : linkedinIconArcade}
+                src={theme == "dark" ? linkedinIconDotted : linkedinIconSticker}
                 alt=""
               />
             </a>

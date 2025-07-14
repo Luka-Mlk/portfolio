@@ -1,40 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { getThemedImage } from "@utils/img/getters/getThemedImage";
 import "./Parallax.css";
-
-type Theme = "light" | "dark";
+import { useTheme } from "@hooks/useTheme";
 
 const Parallax: React.FC = () => {
-  const [theme, setTheme] = useState<Theme>("light");
+  const { theme } = useTheme();
 
   useEffect(() => {
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
-    setTheme(systemDark.matches ? "dark" : "light");
-
-    const themeListener = (e: MediaQueryListEvent) =>
-      setTheme(e.matches ? "dark" : "light");
-
-    systemDark.addEventListener("change", themeListener);
-
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const mg = document.querySelector(".parallax__layer--mg") as HTMLElement;
       const fg = document.querySelector(".parallax__layer--fg") as HTMLElement;
 
-      if (mg) mg.style.transform = `translateY(${scrollY * -1}px)`;
-      if (fg) fg.style.transform = `translateY(${scrollY * -1.75}px)`;
+      if (mg) mg.style.transform = `translateY(${scrollY * -0.9}px)`;
+      if (fg) fg.style.transform = `translateY(${scrollY * -1.25}px)`;
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      systemDark.removeEventListener("change", themeListener);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const toggleTheme = () =>
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
   return (
     <section className="parallax">
@@ -113,12 +100,9 @@ const Parallax: React.FC = () => {
         />
       </picture>
 
-      <div className="parallax__overlay">
+      {/* <div className="parallax__overlay">
         <h1 className="parallax__title">Welcome</h1>
-        <button className="parallax__button" onClick={toggleTheme}>
-          Switch to {theme === "dark" ? "light" : "dark"} mode
-        </button>
-      </div>
+      </div> */}
     </section>
   );
 };
