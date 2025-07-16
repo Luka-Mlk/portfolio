@@ -8,7 +8,7 @@ const LeadSection: React.FC = () => {
         <br />
         <p className="lead__section-main">
           My name is Luka I mess around with web development, Linux, automation,
-          and the stuff in between.
+          and all the stuff in between.
           <br />
           Some of it ends up here. Maybe you'll like something.
         </p>
