@@ -78,7 +78,7 @@ const Parallax: React.FC = () => {
           />
         </picture>
 
-        <h2 className="parallax__welcome">Hello</h2>
+        <h2 className="parallax__welcome">Hello, World</h2>
 
         <div className="parallax__filler"></div>
 

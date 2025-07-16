@@ -7,7 +7,15 @@
 }
 
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* letter-spacing: -2px; */
+    /* word-spacing: -10px; */
+    word-spacing: -0.625em;
+    letter-spacing: -0.125em;
+
     line-height: 1.5;
     font-weight: 400;
 
