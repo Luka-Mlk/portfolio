@@ -27,9 +27,9 @@ body.theme-dark {
 }
 
 body.theme-light {
-    --bg-color: #f8fafc;
+    --bg-color: var(--zomp);
     --nav-color: var(--shamrock-green);
-    --text-color: #1e293b;
+    --text-color: #cbd5e1;
     --hover-color: #2563eb;
 }
 
