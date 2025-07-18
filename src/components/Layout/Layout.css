@@ -24,6 +24,7 @@ body.theme-dark {
     --nav-color: #1e293b;
     --text-color: #cbd5e1;
     --hover-color: #3b82f6;
+    --tag-color: var(--ultra-violet);
 }
 
 body.theme-light {
@@ -31,6 +32,7 @@ body.theme-light {
     --nav-color: var(--shamrock-green);
     --text-color: #cbd5e1;
     --hover-color: #2563eb;
+    --tag-color: var(--cambridge-blue);
 }
 
 body {
