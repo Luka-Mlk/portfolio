@@ -1,0 +1,27 @@
+.ticketblaster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticketblaster .project__title-desktop {
+    margin: 0 0 20px 0;
+}
+
+.ticketblaster__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ticketblaster .project-image-mobile {
+    margin: 10px 0;
+}
+
+@media and (min-width: 1530px) {
+    .ticketblaster {
+        gap: 20px;
+    }
+}

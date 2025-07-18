@@ -1,0 +1,16 @@
+.project__section {
+    margin: 350px 0 0 0;
+    letter-spacing: -1px;
+    word-spacing: -5px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__section-intro {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 400px 0;
+}
