@@ -1,16 +1,19 @@
+import ticketblaster from "@assets/projects/ticket-blaster.png";
+import "./TicketBlaster.css";
+
 interface MobileProps {
   tags: string[];
 }
 
 const Mobile: React.FC<MobileProps> = ({ tags }) => {
   return (
-    <div className="project">
+    <div className="project ticketblaster">
       <h2>🎟️ TicketBlaster</h2>
       <h3>A full-stack Ticketmaster clone built as a course capstone</h3>
       <img
-        src="/images/ticketblaster.png"
+        src={ticketblaster}
         alt="Screenshot of TicketBlaster app"
-        className="project-image"
+        className="project-image project-image-mobile"
       />
       <p>
         TicketBlaster was built as the final project for the full-stack

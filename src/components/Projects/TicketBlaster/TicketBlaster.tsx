@@ -8,10 +8,10 @@ const TicketBlaster: React.FC = () => {
   const tags: string[] = [
     "🟢 NodeJS",
     "🎉 Social",
-    "Distributed Monolith",
     "MongoDB",
     "⚛️ React",
     "PM2",
+    "Distributed Monolith",
   ];
 
   const isDesktop = useMediaQuery("(min-width: 1530px)");
