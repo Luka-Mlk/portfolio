@@ -1,0 +1,58 @@
+interface MobileProps {
+  tags: string[];
+}
+
+const Mobile: React.FC<MobileProps> = ({ tags }) => {
+  return (
+    <div className="project">
+      <h2>🎟️ TicketBlaster</h2>
+      <h3>A full-stack Ticketmaster clone built as a course capstone</h3>
+      <img
+        src="/images/ticketblaster.png"
+        alt="Screenshot of TicketBlaster app"
+        className="project-image"
+      />
+      <p>
+        TicketBlaster was built as the final project for the full-stack
+        development program I completed at Semos Education. After 9 months of
+        hands-on learning, this app was meant to tie everything together into a
+        real-world application.
+      </p>
+      <p>
+        The goal was to build a Ticketmaster-style app with user accounts, admin
+        dashboards, ticket history, and session persistence — all built using
+        the MERN stack.
+      </p>
+      <p>
+        A unique challenge was implementing a custom proxy server in Node.js to
+        route traffic between services. This became necessary to satisfy the
+        project requirement for a proxy and gave me valuable experience working
+        with low-level HTTP routing and middleware.
+      </p>
+      <p>
+        Due to some issues with cross-platform service management on Windows, I
+        introduced PM2 as a process manager to ensure all services booted as
+        seperate services
+      </p>
+      <p>
+        The frontend was my first large-scale React project, and it solidified
+        my understanding of component architecture, state management, and API
+        integration in real-world UIs.
+      </p>
+      <p>
+        TicketBlaster uses MongoDB as its primary data store — marking my first
+        hands-on experience with NoSQL databases, including modeling, indexing,
+        and querying with Mongoose.
+      </p>
+      <div className="tags">
+        {tags.map((tag) => (
+          <span key={tag} className="tag">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export { Mobile };

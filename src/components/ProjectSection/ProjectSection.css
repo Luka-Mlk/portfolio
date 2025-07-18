@@ -9,7 +9,8 @@
     justify-content: center;
 }
 
-.project__section h2 {
+.project__section-intro {
     font-size: 2em;
     text-align: center;
+    margin: 0 0 400px 0;
 }

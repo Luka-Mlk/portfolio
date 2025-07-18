@@ -45,7 +45,10 @@
 }
 
 .project-image {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 @media (min-width: 1530px) {
@@ -53,6 +56,6 @@
         padding: 50px;
     }
     .project-image {
-        max-height: 540px;
+        max-height: 400px;
     }
 }

@@ -18,8 +18,6 @@ const StockTrust: React.FC = () => {
 
   const isDesktop = useMediaQuery("(min-width: 1530px)");
 
-  console.log(isDesktop);
-
   return <>{isDesktop ? <Desktop tags={tags} /> : <Mobile tags={tags} />}</>;
 };
 
