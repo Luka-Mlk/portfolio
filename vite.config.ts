@@ -5,6 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "https://Luka-Mlk.github.io/",
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "src/assets"),
