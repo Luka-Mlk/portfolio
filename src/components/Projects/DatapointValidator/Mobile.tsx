@@ -9,7 +9,7 @@ const Mobile: React.FC<MobileProps> = ({ tags }) => {
     <>
       <div className="project datapointvalidator">
         <div className="project__title-mobile">
-          <h2>🧮 Datapoint Validator</h2>
+          <h2>Datapoint Validator</h2>
           <h3>A helpful internal tool that made it into production</h3>
         </div>
         <img
@@ -19,14 +19,14 @@ const Mobile: React.FC<MobileProps> = ({ tags }) => {
         />
         <div className="project__content">
           <p>
-            While working at a print shop, I’d had enough of the tedious manual
-            labor that was tracking down client design files across our storage
-            system. It was slow, repetitive, and prone to human error — so I
-            decided to automate it.
+            Written while I was working at a print shop — initially out of
+            frustration with the tedious manual labor involved in finding client
+            design files across our storage system. It was slow, repetitive, and
+            mind-numbing, so I decided to take matters into my own hands.
           </p>
           <p>
             We often received massive spreadsheets from clients, listing
-            hundreds or even thousands of requested designs. Our job was to
+            hundreds or even thousands of requested designs. We were tasked to
             manually search the file server row-by-row, find matching designs,
             and report back which ones could be completed quickly.
           </p>

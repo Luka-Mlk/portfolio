@@ -16,8 +16,8 @@ const Desktop: React.FC<DesktopProps> = ({ tags }) => {
           <p>
             TicketBlaster was built as the final project for the full-stack
             development program I completed at Semos Education. After 9 months
-            of hands-on learning, this app was meant to tie everything together
-            into a real-world application.
+            of hands-on learning, this app was meant to sum everything up into a
+            real-world application.
           </p>
           <p>
             The goal was to build a Ticketmaster-style app with user accounts,
@@ -36,12 +36,12 @@ const Desktop: React.FC<DesktopProps> = ({ tags }) => {
             services booted as seperate services
           </p>
           <p>
-            The frontend was my first large-scale React project, and it
-            solidified my understanding of component architecture, state
-            management, and API integration in real-world UIs.
+            The frontend was my first large-scale React project, and it greatly
+            improved my understanding of component architecture, state
+            management, and API integration.
           </p>
           <p>
-            TicketBlaster uses MongoDB as its primary data store — marking my
+            TicketBlaster uses MongoDB as its primary data store — being my
             first hands-on experience with NoSQL databases, including modeling,
             indexing, and querying with Mongoose.
           </p>
