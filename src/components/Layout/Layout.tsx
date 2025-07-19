@@ -5,10 +5,8 @@ import { useTheme } from "@hooks/useTheme";
 import { ThemeToggle } from "@components/ThemeToggle/ThemeToggle";
 
 import githubIconDotted from "@assets/icons/github-dotted.png";
-import instagramIconDotted from "@assets/icons/instagram-dotted.png";
 import linkedinIconDotted from "@assets/icons/linkedin-dotted.png";
 import githubIconSticker from "@assets/icons/github-sticker.png";
-import instagramIconSticker from "@assets/icons/instagram-sticker.png";
 import linkedinIconSticker from "@assets/icons/linkedin-sticker.png";
 
 export const Layout = () => {
