@@ -35,18 +35,6 @@ export const Layout = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com/luka.mllk/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={
-                  theme == "dark" ? instagramIconDotted : instagramIconSticker
-                }
-                alt=""
-              />
-            </a>
-            <a
               href="https://mk.linkedin.com/in/luka-milik"
               target="_blank"
               rel="noreferrer"
