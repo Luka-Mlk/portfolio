@@ -2,6 +2,7 @@ import { StockTrust } from "@components/Projects/StockTrust/StockTrust";
 import "./ProjectSection.css";
 import { TicketBlaster } from "@components/Projects/TicketBlaster/TicketBlaster";
 import { DatapointValidator } from "@components/Projects/DatapointValidator/DatapointValidator";
+import { Dscan } from "@components/Projects/Dscan/Dscan";
 
 const ProjectSection: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const ProjectSection: React.FC = () => {
       <StockTrust />
       <TicketBlaster />
       <DatapointValidator />
+      <Dscan />
     </div>
   );
 };
