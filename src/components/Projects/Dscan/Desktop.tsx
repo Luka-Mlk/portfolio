@@ -35,6 +35,23 @@ const Desktop: React.FC<DesktopProps> = ({ tags }) => {
             in the directory where Dscan is run. It's built in TypeScript with
             just one external dependency — TypeScript itself.
           </p>
+          <p>
+            Dscan is built with simplicity and lightweight performance in mind,
+            making it easy to integrate into existing workflows without adding
+            overhead. In an agile environment, it’s especially useful for
+            quickly assessing the impact of changes. Developers can run it to
+            ensure no breaking changes make it to production or even to vet pull
+            requests before merging. As part of ongoing improvements, I’m
+            planning to add unit tests to increase reliability and ensure it
+            stays maintainable as the tool evolves.
+          </p>
+          <p>
+            Dscan is a public project on npm and can be found
+            <a href="https://npmjs.com/package/dscan" target="_blank">
+              {" "}
+              here
+            </a>
+          </p>
           <div className="tags">
             {tags.map((tag) => (
               <span key={tag} className="tag">
